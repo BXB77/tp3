@@ -16,7 +16,7 @@
      $resultat=mysqli_query($link,"select distinct nom from Film join Artiste where idArtiste=idMes");
      if($resultat)
      {
-       echo "<option>"."Personne"."</option>";
+       echo "<option>"."Tous"."</option>";
        while ($film=mysqli_fetch_assoc($resultat)){
         echo "<option>".$film['nom']."</option>";
        }
@@ -59,3 +59,18 @@
     </table>
   </body>
 </html>
+
+<!--Tu devrais créer deux fichiers distincts pour chaque exo, plus simple à corriger
+//Exo 1 : Clarté 2.5/4 (commits +fréquents appréciables, préciser commentaires des commits + remarques ci-dessus)
+//        Fonctionnement 3/4 (intestable sans créer un nouveau fichier)
+//        Bonus artistique 0.5/1 (présence de lignes au tableau)
+//        7/8
+
+//Exo 2 : Clarté 3/4(préciser encore le commit)
+//        Fonctionnement 3.5/4 (fais marcher le "tous" en affichant tous les films)
+//        Bonus artistique 0.5/1 (comme exo1)
+//        7/8
+
+//Exo 3 pas fait 0/4
+
+//Total : 14/20 --> 
